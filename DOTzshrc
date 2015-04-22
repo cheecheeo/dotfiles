@@ -208,6 +208,7 @@ fi
 
 #setprompt
 
+export LESS="-RFX"
 alias vi=$BARE_EDITOR
 alias rgrep="grep -r"
 alias view="vi -R"
