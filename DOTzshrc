@@ -41,8 +41,8 @@ zle -N zle-line-finish
 
 # PROMPT=%n@%m:%~%#
 
-# sudo aptitude install autojump
-source /usr/share/autojump/autojump.zsh
+# autojump-22.2.4
+source $HOME/.nix-profile/share/autojump/autojump.zsh
 
 # mkdir -p $HOME/packages && cd $HOME/packages && git clone git@github.com:zsh-users/antigen.git
 source /home/jchee/packages/antigen/antigen.zsh
