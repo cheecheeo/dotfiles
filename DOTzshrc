@@ -48,16 +48,19 @@ source /usr/share/autojump/autojump.zsh
 source /home/jchee/packages/antigen/antigen.zsh
 
 antigen use oh-my-zsh
-antigen bundle git
+antigen bundle gitfast
 
 ISSUE=$(cat /etc/issue)
 [[ $ISSUE == Ubuntu* ]] && antigen bundle command-not-found
-plugins=(gitfast)
 
 antigen bundle zsh-users/zsh-syntax-highlighting
 
 # Tell antigen that you're done.
 antigen apply
+
+# override parse_git_dirty function because monorepos
+function parse_git_dirty() {
+}
 
 #TODO wrap those two settings together into a 'use vim bindings with ctrl-r function or something'
 bindkey -v
