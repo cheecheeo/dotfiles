@@ -15,19 +15,15 @@ if [ -d ~/.cabal/bin ]; then
         export PATH
 fi
 
-if [ -d $HOME/.local/bin ]; then
-        PATH=$HOME/.local/bin:"${PATH}"
-        export PATH
-fi
-
-if [ $DISPLAY ]; then
-        export BARE_EDITOR='/usr/bin/gvim'
-        # xorg screensaver set to 5 mins
-        xset s blank
-        xset s 300
-else
-        export BARE_EDITOR='/usr/bin/vim'
-fi
+# if [ $DISPLAY ]; then
+#         export BARE_EDITOR='/usr/bin/gvim'
+#         # xorg screensaver set to 5 mins
+#         xset s blank
+#         xset s 300
+# else
+#         export BARE_EDITOR='/usr/bin/vim'
+# fi
+export BARE_EDITOR='vim'
 export EDITOR="$BARE_EDITOR -f"
 export SVN_EDITOR=$EDITOR
 export GIT_EDITOR=$EDITOR
