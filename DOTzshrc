@@ -169,7 +169,9 @@ if [[ "$TERM" != "dumb" ]] && [[ "$DISABLE_LS_COLORS" != "true" ]]; then
     # display exitcode on the right when >0
     return_code="%(?..%{$fg[red]%}%? ‽‽‽%{$reset_color%})"
 
-    PROMPT='[%{$fg[red]%}%n%{$reset_color%}@%{$fg[magenta]%}%m%{$reset_color%}:%{$fg[blue]%}%~%{$reset_color%}$(git_prompt_info)]${return_code}$(git_prompt_status)%{$reset_color%}
+    #PROMPT='[%{$fg[red]%}%n%{$reset_color%}@%{$fg[magenta]%}%m%{$reset_color%}:%{$fg[blue]%}%~%{$reset_color%}$(git_prompt_info)]${return_code}$(git_prompt_status)%{$reset_color%}
+    # Twitter's version of git status is too slow to run in a prompt
+    PROMPT='[%{$fg[red]%}%n%{$reset_color%}@%{$fg[magenta]%}%m%{$reset_color%}:%{$fg[blue]%}%~%{$reset_color%}$(git_prompt_info)]${return_code}%{$reset_color%}
 %# '
 
     #RPROMPT='${return_code}$(git_prompt_status)%{$reset_color%}'
@@ -181,7 +183,9 @@ if [[ "$TERM" != "dumb" ]] && [[ "$DISABLE_LS_COLORS" != "true" ]]; then
     ZSH_THEME_GIT_PROMPT_UNMERGED="%{$fg[yellow]%} $GIT_PROMPT_UNMERGED_CHAR"
     ZSH_THEME_GIT_PROMPT_UNTRACKED="%{$fg[cyan]%} $GIT_PROMPT_UNTRACKED_CHAR"
 else
-    PROMPT='[%n@%m:%~$(git_prompt_info)]${return_code}$(git_prompt_status)
+    #PROMPT='[%n@%m:%~$(git_prompt_info)]${return_code}$(git_prompt_status)
+    # Twitter's version of git status is too slow to run in a prompt
+    PROMPT='[%n@%m:%~$(git_prompt_info)]${return_code}$
 %# '
 
     ZSH_THEME_GIT_PROMPT_PREFIX=" on"
