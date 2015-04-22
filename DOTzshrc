@@ -218,3 +218,26 @@ alias catn='tail -n +1'
 
 # for tmux: export 256color
 [ -n "$TMUX" ] && export TERM=screen-256color
+
+function reset-auth () {
+  reset-ssh-agent
+  reset-krb-cc
+}
+
+function reset-ssh-agent () {
+  for s in $(stat --format='%Z:%n' /tmp/ssh-*/* | sort -rn | cut -d : -f 2); do
+      SSH_AUTH_SOCK=$s ssh-add -l > /dev/null 2>&1
+      if [[ $? == 0 ]]; then
+          exportcmd="export SSH_AUTH_SOCK=$s"
+          eval $exportcmd && echo $exportcmd
+          break
+      fi
+  done
+}
+
+function reset-krb-cc () {
+  for k in $(stat --format='%Z:%n' $(find /tmp/krb5cc_* -user $USER) | sort -rn | head -n 1 | cut -d : -f 2); do
+      exportcmd="export KRB5CCNAME=FILE:$k"
+      eval $exportcmd && echo $exportcmd
+  done
+}
