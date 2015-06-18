@@ -225,6 +225,11 @@ alias catn='tail -n +1'
 # for tmux: export 256color
 [ -n "$TMUX" ] && export TERM=screen-256color
 
+# for nix's ghc
+if type >/dev/null 2>&1 -p ghc; then
+  eval "$(egrep ^export "$(type -p ghc | awk '{print $NF}')")"
+fi
+
 function reset-auth () {
   reset-ssh-agent
   reset-krb-cc
