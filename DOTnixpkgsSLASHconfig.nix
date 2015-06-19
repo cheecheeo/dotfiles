@@ -15,7 +15,7 @@
         ffmpeg
         file
         gitAndTools.git-imerge
-        gitAndTools.gitFull
+        #gitAndTools.gitFull
         gkrellm
         glxinfo
         haskellPackages.cabal-install
