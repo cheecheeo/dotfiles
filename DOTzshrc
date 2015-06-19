@@ -252,3 +252,5 @@ function reset-krb-cc () {
       eval $exportcmd && echo $exportcmd
   done
 }
+
+if [ -e /home/jchee/.nix-profile/etc/profile.d/nix.sh ]; then . /home/jchee/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer
