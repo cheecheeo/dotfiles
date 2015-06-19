@@ -1,4 +1,6 @@
 #!/usr/bin/env bash
 set -x
 
-nix-env -q | sort > nix-env.log
+mkdir -p $HOME/.nixpkgs/ &&
+cp DOTnixpkgsSLASHconfig.nix $HOME/.nixpkgs/config.nix &&
+nix-env --install all
