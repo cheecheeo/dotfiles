@@ -1,23 +1,22 @@
 # $HOME/.nixpkgs/config.nix
 
-# TODO: curlFull from git-nixpkgs
-
 {
   packageOverrides = pkgs_: with pkgs_; {
     all = with pkgs; buildEnv {
       name = "all";
       paths = [
         autojump
-        curl # TODO curlFull
+        curl # TODO curlFull from git
         elinks
         evince
         expect
         ffmpeg
         file
         gitAndTools.git-imerge
-        #gitAndTools.gitFull
+        #gitAndTools.gitFull #TODO: special git at Twitter, change PATH?
         gkrellm
         glxinfo
+        gnome3.eog
         haskellPackages.cabal-install
         haskellPackages.ghc
         haskellPackages.happy
@@ -28,7 +27,7 @@
         lastpass-cli
         mercurialFull
         nox
-        openconnect # TODO: gnutls!!!
+        #openconnect # TODO: openconnect_gnutls from git
         pylint
         python27
         python27Packages.flake8
