@@ -17,6 +17,7 @@
         gkrellm
         glxinfo
         gnome3.eog
+        gnugrep
         haskellPackages.cabal-install
         haskellPackages.ghc
         haskellPackages.happy
