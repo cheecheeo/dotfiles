@@ -26,6 +26,7 @@
         jq
         krb5
         lastpass-cli
+        less
         mercurialFull
         nox
         #openconnect # TODO: openconnect_gnutls from git
