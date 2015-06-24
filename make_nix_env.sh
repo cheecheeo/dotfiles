@@ -3,4 +3,4 @@ set -x
 
 mkdir -p $HOME/.nixpkgs/ &&
 cp DOTnixpkgsSLASHconfig.nix $HOME/.nixpkgs/config.nix &&
-nix-env --install all
+nix-env --file $NIXPKGS --install all

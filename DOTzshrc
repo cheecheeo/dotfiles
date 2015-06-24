@@ -219,6 +219,18 @@ alias xclip='xclip -selection c'
 alias less='less -F -X'
 alias catn='tail -n +1'
 
+# enable color support of ls and also add handy aliases
+if [ -x /usr/bin/dircolors ]; then
+    test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
+    alias ls='ls --color=auto'
+    #alias dir='dir --color=auto'
+    #alias vdir='vdir --color=auto'
+
+    alias grep='grep --color=auto'
+    alias fgrep='fgrep --color=auto'
+    alias egrep='egrep --color=auto'
+fi
+
 # if I'm running a display and my display is xterm use a better TERM
 [ -n "$DISPLAY" -a "$TERM" = "xterm" ] && export TERM=xterm-256color
 
@@ -252,5 +264,7 @@ function reset-krb-cc () {
       eval $exportcmd && echo $exportcmd
   done
 }
+
+export NIXPKGS=$HOME/packages/nixpkgs
 
 if [ -e /home/jchee/.nix-profile/etc/profile.d/nix.sh ]; then . /home/jchee/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer
