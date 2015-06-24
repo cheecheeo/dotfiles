@@ -35,11 +35,13 @@
         python27Packages.flake8
         python27Packages.ipython
         silver-searcher
+        sloccount
         tmux
         vim
         vlc
         wvdial
         z3
+        zsh
       ];
     };
   };
