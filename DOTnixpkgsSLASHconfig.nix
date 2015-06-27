@@ -8,15 +8,11 @@
         autojump
         curl # TODO curlFull from git
         elinks
-        evince
         expect
         ffmpeg
         file
         gitAndTools.git-imerge
         #gitAndTools.gitFull #TODO: special git at Twitter, change PATH?
-        gkrellm
-        glxinfo
-        gnome3.eog
         gnugrep
         haskellPackages.cabal-install
         haskellPackages.ghc
@@ -29,7 +25,7 @@
         less
         mercurialFull
         nox
-        #openconnect # TODO: openconnect_gnutls from git
+        openconnect_gnutls
         pylint
         python27
         python27Packages.flake8
@@ -37,11 +33,23 @@
         silver-searcher
         sloccount
         tmux
+        unrar
         vim
-        vlc
         wvdial
         z3
+        zip
         zsh
+      ];
+    };
+    all-gui = with pkgs; buildEnv {
+      name = "all-gui";
+      paths = [
+        calibre
+        evince
+        gkrellm
+        glxinfo
+        gnome3.eog
+        vlc
       ];
     };
   };
