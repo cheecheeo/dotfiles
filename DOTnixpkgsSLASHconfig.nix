@@ -24,6 +24,7 @@
         lastpass-cli
         less
         mercurialFull
+        mtr
         nox
         openconnect_gnutls
         pylint
