@@ -19,6 +19,7 @@
         haskellPackages.happy
         haskellPackages.hlint
         haskellPackages.idris
+        haskellPackages.ShellCheck
         jq
         krb5
         lastpass-cli
