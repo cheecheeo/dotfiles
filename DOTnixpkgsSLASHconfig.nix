@@ -55,6 +55,7 @@
         gnome3.eog
         transmission_gtk
         vlc
+        zeal
       ];
     };
   };
