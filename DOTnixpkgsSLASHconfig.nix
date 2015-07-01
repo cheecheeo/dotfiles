@@ -31,6 +31,7 @@
         nox
         openconnect_gnutls
         openssh_with_kerberos
+        parallel
         pylint
         python27
         python27Packages.flake8
@@ -49,6 +50,7 @@
     all-gui = with pkgs; buildEnv {
       name = "all-gui";
       paths = [
+        baobab
         calibre
         evince
         gimp
