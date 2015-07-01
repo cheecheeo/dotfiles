@@ -6,6 +6,7 @@
       name = "all";
       paths = [
         autojump
+        bash
         curl # TODO curlFull from git
         elinks
         expect
@@ -20,6 +21,7 @@
         haskellPackages.hlint
         haskellPackages.idris
         haskellPackages.ShellCheck
+        i2p
         jq
         krb5
         lastpass-cli
@@ -51,6 +53,7 @@
         gkrellm
         glxinfo
         gnome3.eog
+        transmission_gtk
         vlc
       ];
     };
