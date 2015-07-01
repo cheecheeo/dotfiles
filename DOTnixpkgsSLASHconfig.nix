@@ -30,6 +30,7 @@
         mtr
         nox
         openconnect_gnutls
+        openssh_with_kerberos
         pylint
         python27
         python27Packages.flake8
@@ -50,6 +51,7 @@
       paths = [
         calibre
         evince
+        gimp
         gkrellm
         glxinfo
         gnome3.eog
