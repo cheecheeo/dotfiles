@@ -57,6 +57,7 @@
         gkrellm
         glxinfo
         gnome3.eog
+        gparted
         transmission_gtk
         vlc
         zeal
