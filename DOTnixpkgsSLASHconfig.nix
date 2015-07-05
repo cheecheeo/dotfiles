@@ -28,6 +28,7 @@
         less
         mercurialFull
         mtr
+        nmap
         nox
         openconnect_gnutls
         openssh_with_kerberos
