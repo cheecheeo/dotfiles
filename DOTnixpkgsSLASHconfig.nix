@@ -58,6 +58,7 @@
         glxinfo
         gnome3.eog
         gparted
+        pavucontrol
         redshift
         transmission_gtk
         vlc
