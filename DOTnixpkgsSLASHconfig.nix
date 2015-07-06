@@ -9,6 +9,7 @@
         autojump
         bash
         curl # TODO curlFull from git
+        ctags
         elinks
         expect
         ffmpeg
@@ -41,6 +42,7 @@
         silver-searcher
         sloccount
         tmux
+        tree
         unrar
         vim
         wvdial
@@ -58,12 +60,15 @@
         gimp
         gkrellm
         glxinfo
+        gnome3.dconf
         gnome3.eog
         gparted
         pavucontrol
         redshift
         transmission_gtk
+        unison
         vlc
+        xclip
         zeal
       ];
     };
