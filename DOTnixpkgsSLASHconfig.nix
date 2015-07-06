@@ -38,7 +38,7 @@
         pylint
         python27
         python27Packages.flake8
-        python27Packages.ipython
+        #python27Packages.ipython
         silver-searcher
         sloccount
         tmux
@@ -55,14 +55,18 @@
       name = "all-gui";
       paths = [
         baobab
-        calibre
+        #calibre
         evince
+        #firefox-bin
+        #flashplayer
         gimp
         gkrellm
         glxinfo
         gnome3.dconf
         gnome3.eog
+        #gnome3.gnome_terminal
         gparted
+        #hipchat
         pavucontrol
         redshift
         transmission_gtk
