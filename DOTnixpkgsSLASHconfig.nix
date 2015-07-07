@@ -72,6 +72,7 @@
         transmission_gtk
         unison
         #viber
+        vimHugeX
         vlc
         xclip
         zeal
