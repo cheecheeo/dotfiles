@@ -3,7 +3,7 @@
 {
   allowUnfree = true;
   packageOverrides = pkgs_: with pkgs_; {
-    all = with pkgs; buildEnv {
+    all = lowPrio (with pkgs; buildEnv {
       name = "all";
       paths = [
         autojump
@@ -50,7 +50,7 @@
         zip
         zsh
       ];
-    };
+    });
     all-gui = with pkgs; buildEnv {
       name = "all-gui";
       paths = [
