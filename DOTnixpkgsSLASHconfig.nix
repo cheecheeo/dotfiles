@@ -8,7 +8,7 @@
       paths = [
         autojump
         bash
-        curl # TODO curlFull from git
+        curlFull
         ctags
         elinks
         expect
