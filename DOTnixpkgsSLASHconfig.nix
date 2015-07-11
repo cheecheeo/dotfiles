@@ -23,6 +23,7 @@
         haskellPackages.hlint
         haskellPackages.idris
         haskellPackages.ShellCheck
+        htop
         i2p
         jq
         krb5
