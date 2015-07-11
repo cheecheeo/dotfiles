@@ -23,6 +23,7 @@
         haskellPackages.hlint
         haskellPackages.idris
         haskellPackages.ShellCheck
+        haskellPackages.dash-haskell
         htop
         i2p
         jq
