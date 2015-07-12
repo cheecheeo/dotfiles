@@ -71,6 +71,7 @@
         #hipchat
         pavucontrol
         redshift
+        steam
         transmission_gtk
         unison
         #viber
