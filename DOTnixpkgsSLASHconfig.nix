@@ -37,6 +37,7 @@
         openconnect_gnutls
         openssh_with_kerberos
         parallel
+        pandoc
         pylint
         python27
         python27Packages.flake8
