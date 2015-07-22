@@ -28,7 +28,7 @@
         htop
         i2p
         jq
-        krb5
+        krb5Full
         lastpass-cli
         less
         mercurialFull
