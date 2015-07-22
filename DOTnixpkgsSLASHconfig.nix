@@ -18,6 +18,7 @@
         #gitAndTools.gitFull #TODO: special git at Twitter, change PATH?
         gnugrep
         haskellPackages.cabal-install
+        haskellPackages.cabal2nix
         haskellPackages.ghc
         haskellPackages.happy
         haskellPackages.hlint
