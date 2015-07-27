@@ -14,6 +14,7 @@
         expect
         ffmpeg
         file
+        fzf
         gitAndTools.git-imerge
         #gitAndTools.gitFull #TODO: special git at Twitter, change PATH?
         gnugrep
