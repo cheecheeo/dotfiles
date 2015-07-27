@@ -2,6 +2,7 @@
 
 {
   allowUnfree = true;
+  allowBroken = true;
   packageOverrides = pkgs_: with pkgs_; {
     all = lowPrio (with pkgs; buildEnv {
       name = "all";
