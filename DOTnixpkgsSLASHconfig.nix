@@ -12,6 +12,7 @@
         curlFull
         ctags
         elinks
+        entr
         expect
         ffmpeg
         file
