@@ -11,6 +11,7 @@
         bash
         curlFull
         ctags
+        darcs
         elinks
         entr
         expect
