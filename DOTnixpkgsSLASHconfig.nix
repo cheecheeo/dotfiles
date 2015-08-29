@@ -46,7 +46,7 @@
         pylint
         python27
         python27Packages.flake8
-        #python27Packages.ipython
+        python27Packages.ipython
         silver-searcher
         sloccount
         tmux
