@@ -24,6 +24,7 @@
         haskellPackages.cabal-install
         haskellPackages.cabal2nix
         haskellPackages.ghc
+        haskellPackages.ghcid
         haskellPackages.happy
         haskellPackages.hlint
         haskellPackages.idris
