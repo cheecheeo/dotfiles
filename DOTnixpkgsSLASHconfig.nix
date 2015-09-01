@@ -32,6 +32,7 @@
         haskellPackages.dash-haskell
         htop
         i2p
+        irssi
         jq
         krb5Full
         lastpass-cli
