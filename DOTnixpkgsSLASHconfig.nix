@@ -53,7 +53,7 @@
         sloccount
         tmux
         tree
-        texlive-full
+        texLiveFull
         unrar
         vim
         wvdial
