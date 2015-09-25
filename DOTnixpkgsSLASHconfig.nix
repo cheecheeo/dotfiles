@@ -26,6 +26,7 @@
         haskellPackages.ghc
         haskellPackages.ghcid
         haskellPackages.happy
+        haskellPackages.hindent
         haskellPackages.hlint
         haskellPackages.idris
         haskellPackages.ShellCheck
