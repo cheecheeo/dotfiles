@@ -3,6 +3,10 @@
 {
   allowUnfree = true;
   allowBroken = true;
+  # for netflix
+  chromium.enableWideVine = true;
+  chromium.enablePepperFlash = true;
+  chromium.hiDPISupport = true;
   packageOverrides = pkgs_: with pkgs_; {
     all = lowPrio (with pkgs; buildEnv {
       name = "all";
@@ -68,6 +72,7 @@
       name = "all-gui";
       paths = [
         baobab
+        chromium
         #calibre
         evince
         #firefox-bin
