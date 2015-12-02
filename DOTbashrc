@@ -209,3 +209,5 @@ function ocaml {
 export NIXPKGS=$HOME/packages/nixpkgs
 
 if [ -e /home/jchee/.nix-profile/etc/profile.d/nix.sh ]; then . /home/jchee/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer
+
+zsh
