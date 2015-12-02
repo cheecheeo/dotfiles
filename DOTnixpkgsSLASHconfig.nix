@@ -25,6 +25,7 @@
         gitAndTools.git-imerge
         #gitAndTools.gitFull #TODO: special git at Twitter, change PATH?
         gnugrep
+        gnutar
         haskellPackages.cabal-install
         haskellPackages.cabal2nix
         haskellPackages.ghc
@@ -62,7 +63,9 @@
         texLiveFull
         unrar
         vim
+        wget
         wvdial
+        xz
         z3
         zip
         zsh
