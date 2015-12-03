@@ -45,6 +45,7 @@
         krb5Full
         lastpass-cli
         less
+        man
         mercurialFull
         mtr
         nmap
