@@ -13,6 +13,7 @@
       paths = [
         autojump
         bash
+        bind
         curlFull
         ctags
         darcs
