@@ -54,6 +54,7 @@
         openssh_with_kerberos
         parallel
         pandoc
+        pdftk
         pylint
         python27
         python27Packages.flake8
