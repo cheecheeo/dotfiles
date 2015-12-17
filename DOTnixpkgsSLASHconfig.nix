@@ -37,7 +37,6 @@
         haskellPackages.hlint
         haskellPackages.idris
         haskellPackages.ShellCheck
-        haskellPackages.stack
         haskellPackages.dash-haskell
         htop
         i2p
@@ -62,6 +61,7 @@
         python27Packages.ipython
         silver-searcher
         sloccount
+        stack
         tmux
         tree
         texLiveFull
