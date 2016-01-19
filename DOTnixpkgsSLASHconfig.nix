@@ -94,6 +94,7 @@
         #hipchat
         pavucontrol
         redshift
+        skype
         steam
         transmission_gtk
         unison
