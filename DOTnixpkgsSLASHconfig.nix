@@ -96,6 +96,7 @@
         redshift
         skype
         steam
+        torbrowser
         transmission_gtk
         unison
         #viber
