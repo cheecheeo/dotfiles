@@ -59,6 +59,7 @@
         python27
         python27Packages.flake8
         python27Packages.ipython
+        sshfsFuse
         silver-searcher
         sloccount
         stack
