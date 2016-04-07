@@ -45,7 +45,7 @@ zle -N zle-line-finish
 source $HOME/.nix-profile/share/autojump/autojump.zsh
 
 # mkdir -p $HOME/packages && cd $HOME/packages && git clone git@github.com:zsh-users/antigen.git
-source /home/jchee/packages/antigen/antigen.zsh
+source $HOME/packages/antigen/antigen.zsh
 
 antigen use oh-my-zsh
 antigen bundle gitfast
