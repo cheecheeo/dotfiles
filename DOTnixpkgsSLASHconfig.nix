@@ -55,6 +55,7 @@
         parallel
         pandoc
         pdftk
+        perlPackages.PerlTidy
         pylint
         python27
         python27Packages.flake8
