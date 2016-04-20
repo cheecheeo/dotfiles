@@ -48,6 +48,7 @@
         man
         mercurialFull
         mtr
+        nethogs
         nmap
         nox
         openconnect_gnutls
