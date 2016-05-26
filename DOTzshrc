@@ -42,7 +42,7 @@ zle -N zle-line-finish
 # PROMPT=%n@%m:%~%#
 
 # autojump-22.2.4
-source $HOME/.nix-profile/share/autojump/autojump.zsh
+source $(autojump-share)/autojump.zsh
 
 # mkdir -p $HOME/packages && cd $HOME/packages && git clone git@github.com:zsh-users/antigen.git
 source $HOME/packages/antigen/antigen.zsh
