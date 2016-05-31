@@ -87,7 +87,7 @@
         chromium
         #calibre
         evince
-        #firefox-bin
+        firefox
         #flashplayer
         gimp
         gkrellm
