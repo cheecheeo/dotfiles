@@ -35,7 +35,9 @@
         haskellPackages.happy
         haskellPackages.hindent
         haskellPackages.hlint
+        haskellPackages.hscolour
         haskellPackages.idris
+        haskellPackages.neil
         haskellPackages.ShellCheck
         haskellPackages.dash-haskell
         htop
