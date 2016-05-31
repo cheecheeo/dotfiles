@@ -24,7 +24,7 @@
         file
         fzf
         gitAndTools.git-imerge
-        #gitAndTools.gitFull #TODO: special git at Twitter, change PATH?
+        gitAndTools.gitFull
         gnugrep
         gnutar
         goPackages.json2csv.bin
