@@ -50,6 +50,7 @@
         man
         mercurialFull
         mtr
+        ncdu
         nethogs
         nmap
         nox
