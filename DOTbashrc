@@ -149,34 +149,6 @@ export SVN_EDITOR="$EDITOR -f"
 export GIT_EDITOR="$EDITOR -f"
 set -o vi
 
-if [ -d ~/packages/godi/bin ] ; then
-	PATH=~/packages/godi/sbin:~/packages/godi/bin:${PATH}
-	export PATH
-else
-  export PATH=/opt/godi-3.12.0/bin:/opt/godi-3.12.0/lib:$PATH
-fi
-
-if [ -d ~/trunk/peoplesearch ] ; then
-	PATH=~/trunk/lib/ocaml/atdgen:~/trunk/peoplesearch/programs:${PATH}
-	export PATH
-fi
-
-if [ -d ~/jsonpat ] ; then
-	PATH=~/jsonpat:${PATH}
-	export PATH
-fi
-
-# ocamlpath used by ocamlfind
-if [ -d ~/trunk/lib/ocaml ] ; then
-	OCAMLPATH=.:..:~/trunk/lib/ocaml
-	export OCAMLPATH
-fi
-
-if [ -d ~/lib ] ; then
-	LD_LIBRARY_PATH=~/lib
-	export LD_LIBRARY_PATH
-fi
-
 alias rgrep="grep -r"
 alias view="vi -R"
 alias vimdiff="vi -d"
