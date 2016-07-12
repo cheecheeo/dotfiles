@@ -58,6 +58,7 @@
         openssh_with_kerberos
         parallel
         pandoc
+        pastebinit
         pdftk
         perlPackages.PerlTidy
         pylint
