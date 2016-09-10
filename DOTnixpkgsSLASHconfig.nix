@@ -39,7 +39,7 @@
         haskellPackages.idris
         haskellPackages.neil
         haskellPackages.ShellCheck
-        haskellPackages.dash-haskell
+        #haskellPackages.dash-haskell
         htop
         i2p
         irssi
