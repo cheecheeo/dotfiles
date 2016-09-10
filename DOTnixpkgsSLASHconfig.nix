@@ -62,8 +62,8 @@
         pastebinit
         pdftk
         perlPackages.PerlTidy
-        pylint
-        python27
+        pythonPackages.pylint
+        #python27
         python27Packages.flake8
         python27Packages.ipython
         sshfsFuse
@@ -72,7 +72,7 @@
         stack
         tmux
         tree
-        texLiveFull
+        texlive.combined.scheme-basic
         unrar
         vim
         wget
