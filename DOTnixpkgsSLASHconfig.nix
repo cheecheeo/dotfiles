@@ -25,6 +25,7 @@
         fzf
         gitAndTools.git-imerge
         gitAndTools.gitFull
+        gitAndTools.gitSVN
         gnugrep
         gnutar
         goPackages.json2csv.bin
