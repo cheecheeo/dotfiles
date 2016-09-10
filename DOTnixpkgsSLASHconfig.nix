@@ -28,7 +28,6 @@
         gitAndTools.gitSVN
         gnugrep
         gnutar
-        goPackages.json2csv.bin
         haskellPackages.cabal-install
         haskellPackages.cabal2nix
         haskellPackages.ghc
