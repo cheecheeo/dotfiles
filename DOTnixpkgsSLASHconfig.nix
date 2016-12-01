@@ -49,6 +49,7 @@
         less
         man
         mercurialFull
+        mosh
         mtr
         ncdu
         nethogs
