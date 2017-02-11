@@ -41,6 +41,7 @@
         haskellPackages.ShellCheck
         #haskellPackages.dash-haskell
         htop
+        httpie
         i2p
         irssi
         jq
