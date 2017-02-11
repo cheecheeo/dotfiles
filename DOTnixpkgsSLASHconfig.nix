@@ -78,6 +78,7 @@
         vim
         wget
         wvdial
+        xdotool
         xz
         z3
         zip
