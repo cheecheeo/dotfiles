@@ -1,0 +1,28 @@
+[user]
+  email = cheecheeo@gmail.com
+  name = John Chee
+[color]
+  ui = true
+[alias]
+  b = branch -vv
+  lp = log -p --stat --date=local
+  cb = checkout -b
+  co = checkout
+  d = diff
+  ds = diff --stat
+  lpp = log --graph --pretty=format:'%C(yellow)%h%Creset %Cgreen%cr%Creset %C(blue)%an%Creset%C(red)%d%Creset %s' --branches --date=local
+  r = remote -v
+  rem = rebase master
+  cm = checkout master
+  db = diff $(git merge-base HEAD master)
+[branch]
+  autosetuprebase = always
+[push]
+	default = upstream
+[diff]
+	algorithm = patience
+	renames = true
+[core]
+	pager = less -F -X
+[http]
+	postBuffer = 512000000
