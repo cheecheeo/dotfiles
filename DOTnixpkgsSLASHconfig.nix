@@ -6,7 +6,7 @@
   # for netflix
   chromium.enableWideVine = true;
   chromium.enablePepperFlash = true;
-  chromium.hiDPISupport = true;
+  #chromium.hiDPISupport = true;
   packageOverrides = pkgs_: with pkgs_; {
     all = lowPrio (with pkgs; buildEnv {
       name = "all";
@@ -14,10 +14,12 @@
         autojump
         bash
         bind
+	binutils
         curlFull
         ctags
         darcs
         elinks
+	emacs
         entr
         expect
         ffmpeg
@@ -70,14 +72,14 @@
         sshfsFuse
         silver-searcher
         sloccount
-        stack
+        #stack
         tmux
         tree
         texlive.combined.scheme-basic
         unrar
         vim
         wget
-        wvdial
+        #wvdial
         xdotool
         xz
         z3
