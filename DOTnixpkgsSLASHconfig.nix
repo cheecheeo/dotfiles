@@ -39,7 +39,6 @@
         haskellPackages.hlint
         haskellPackages.hscolour
         haskellPackages.idris
-        haskellPackages.neil
         haskellPackages.ShellCheck
         #haskellPackages.dash-haskell
         htop
@@ -59,17 +58,13 @@
         nmap
         nox
         openconnect_gnutls
-        openssh_with_kerberos
+        openssh
         parallel
         pandoc
         pastebinit
         pdftk
         perlPackages.PerlTidy
-        pythonPackages.pylint
-        #python27
-        python27Packages.flake8
-        python27Packages.ipython
-        sshfsFuse
+        sshfs-fuse
         silver-searcher
         sloccount
         #stack
