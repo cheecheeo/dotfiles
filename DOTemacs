@@ -9,10 +9,10 @@
 (unless (package-installed-p 'evil)
   (package-install 'evil))
 
-;; Download undo-tree
-(unless (package-installed-p 'undo-tree)
-  (package-install 'undo-tree))
-(require 'undo-tree)
+;; Download undo-fu
+(unless (package-installed-p 'undo-fu)
+  (package-install 'undo-fu))
+(require 'undo-fu)
 
 ;; Download haskell-mode
 (unless (package-installed-p 'haskell-mode)
@@ -35,6 +35,16 @@
 ;; Enable Evil
 (require 'evil)
 (evil-mode 1)
+
+;; Use undo-fu package for evil
+(use-package evil
+  :init
+  (setq evil-undo-system 'undo-fu))
+
+(use-package undo-fu)
+(setq undo-limit 67108864) ; 64mb.
+(setq undo-strong-limit 100663296) ; 96mb.
+(setq undo-outer-limit 1006632960) ; 960mb.
 
 ;;; C-c as general purpose escape key sequence.
 ;;;
