@@ -4,8 +4,8 @@
   allowUnfree = true;
   allowBroken = true;
   # for netflix
-  chromium.enableWideVine = true;
-  chromium.enablePepperFlash = true;
+  #chromium.enableWideVine = true;
+  #chromium.enablePepperFlash = true;
   #chromium.hiDPISupport = true;
   packageOverrides = pkgs_: with pkgs_; {
     all = lowPrio (with pkgs; buildEnv {
