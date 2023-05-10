@@ -1,7 +1,12 @@
 #!/usr/bin/env bash
 set -ex
 
-export NIXPKGS=${NIXPKGS:-$HOME/packages/nixpkgs}
+FILE=$HOME/packages/nixpkgs
+if [[ -f "$FILE" ]]; then
+    export NIXPKGS=${NIXPKGS:-$HOME/packages/nixpkgs}
+else
+    export NIXPKGS='<nixpkgs>'
+fi
 
 mkdir -p $HOME/.nixpkgs/ &&
 cp DOTnixpkgsSLASHconfig.nix $HOME/.nixpkgs/config.nix &&
