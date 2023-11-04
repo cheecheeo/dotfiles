@@ -38,7 +38,7 @@
         haskellPackages.hindent
         haskellPackages.hlint
         haskellPackages.hscolour
-        haskellPackages.idris
+        #haskellPackages.idris
         haskellPackages.ShellCheck
         #haskellPackages.dash-haskell
         htop
