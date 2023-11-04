@@ -94,17 +94,12 @@
         gimp
         gkrellm
         glxinfo
-        gnome3.dconf
-        gnome3.eog
         #gnome3.gnome_terminal
         gparted
         #hipchat
         pavucontrol
         redshift
-        skype
         steam
-        torbrowser
-        transmission_gtk
         unison
         #viber
         vimHugeX
