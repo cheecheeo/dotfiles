@@ -29,6 +29,7 @@
         gitAndTools.gitFull
         gitAndTools.gitSVN
         gnugrep
+        gnumake
         gnutar
         haskellPackages.cabal-install
         haskellPackages.cabal2nix
@@ -64,6 +65,27 @@
         pastebinit
         pdftk
         perlPackages.PerlTidy
+        #python3
+        (python3.withPackages(ps: with ps; [
+            markdown2
+            weasyprint
+            docopt
+            (buildPythonPackage rec {
+                pname = "md2pdf";
+                version = "1.0.1";
+                src = fetchPypi {
+                    inherit pname version;
+                    sha256 = "sha256-PVqrd9zVtvWCexk4GasajBzsUGzl9sd3w0EbcDNSzZg=";
+                };
+                doCheck = false;
+                propagatedBuildInputs = [
+                  # Specify dependencies
+                  pkgs.python3Packages.pip
+                ];
+            }
+            )
+            ])
+        )
         sshfs-fuse
         silver-searcher
         sloccount
