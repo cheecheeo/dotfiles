@@ -65,6 +65,7 @@
         pastebinit
         pdftk
         perlPackages.PerlTidy
+        # https://nixos.wiki/wiki/Python
         #python3
         (python3.withPackages(ps: with ps; [
             markdown2
