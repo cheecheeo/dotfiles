@@ -92,7 +92,9 @@
         #stack
         tmux
         tree
-        texlive.combined.scheme-basic
+        # https://nixos.wiki/wiki/TexLive
+        #texlive.combined.scheme-basic
+        texlive.combined.scheme-full
         unrar
         vim
         wget
