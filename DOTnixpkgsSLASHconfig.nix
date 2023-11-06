@@ -58,6 +58,7 @@
         nethogs
         nmap
         nox
+        neovim
         openconnect_gnutls
         openssh
         parallel
