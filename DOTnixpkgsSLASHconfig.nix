@@ -24,6 +24,7 @@
         expect
         ffmpeg
         file
+        fish
         fzf
         gitAndTools.git-imerge
         gitAndTools.gitFull
