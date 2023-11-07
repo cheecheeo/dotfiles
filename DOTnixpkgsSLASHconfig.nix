@@ -100,7 +100,6 @@
         #texlive.combined.scheme-basic
         texlive.combined.scheme-full
         unrar
-        vim
         wget
         #wvdial
         xdotool
@@ -130,7 +129,6 @@
         steam
         unison
         #viber
-        vimHugeX
         vlc
         xclip
         zeal
