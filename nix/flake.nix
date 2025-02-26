@@ -27,7 +27,7 @@
           home-manager.useGlobalPkgs = true;
           home-manager.useUserPackages = true;
           home-manager.users.nixos = { pkgs, ... }: {
-            home.packages = [ pkgs.tmux pkgs.docker ];
+            home.packages = [ pkgs.docker ];
             home.stateVersion = "24.11";
             programs.neovim = {
 	      enable = true;
@@ -57,6 +57,10 @@
 		};
               };
             };
+	    programs.tmux = {
+              enable = true;
+              shortcut = "a";
+	    };
           };
         }
       ];
