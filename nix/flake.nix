@@ -42,6 +42,7 @@
 	      ];
 	      extraConfig = ''
 	        set background=light
+		set number relativenumber
 	        colorscheme PaperColor
 	      '';
             };
