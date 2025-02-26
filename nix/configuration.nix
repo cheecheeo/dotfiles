@@ -8,11 +8,11 @@
 { config, lib, pkgs, ... }:
 
 {
+  users.users.nixos.extraGroups = [ "docker" ];
+  virtualisation.docker.enable = true;
+
   wsl.enable = true;
   wsl.defaultUser = "nixos";
-
-  virtualisation.docker.enable = true;
-  users.users.nixos.extraGroups = [ "docker" ];
 
   # This value determines the NixOS release from which the default
   # settings for stateful data, like file locations and database versions

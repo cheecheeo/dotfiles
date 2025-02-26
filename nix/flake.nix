@@ -27,11 +27,12 @@
           home-manager.useGlobalPkgs = true;
           home-manager.useUserPackages = true;
           home-manager.users.nixos = { pkgs, ... }: {
-            home.packages = [ pkgs.git pkgs.neovim pkgs.tmux pkgs.docker ];
-            home.stateVersion = "24.11";
+            home.packages = [ pkgs.tmux pkgs.docker ];
 	    #none of this nvim stuff works for some reason
-            home.sessionVariables.EDITOR = "nvim";
+            home.stateVersion = "24.11";
             programs.neovim = {
+	      enable = true;
+	      defaultEditor = true;
               viAlias = true;
               vimAlias = true;
             };
@@ -41,6 +42,9 @@
               userEmail = "johnanchee@gmail.com";
               extraConfig = {
                 github.user = "cheecheeo";
+		core = {
+		  editor = "nvim";
+		};
               };
             };
           };
