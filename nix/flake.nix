@@ -28,13 +28,22 @@
           home-manager.useUserPackages = true;
           home-manager.users.nixos = { pkgs, ... }: {
             home.packages = [ pkgs.tmux pkgs.docker ];
-	    #none of this nvim stuff works for some reason
             home.stateVersion = "24.11";
             programs.neovim = {
 	      enable = true;
+	      # this doesn't work for some reason
 	      defaultEditor = true;
               viAlias = true;
               vimAlias = true;
+	      plugins = with pkgs.vimPlugins; [
+		vim-airline
+		solarized-nvim
+		papercolor-theme
+	      ];
+	      extraConfig = ''
+	        set background=light
+	        colorscheme PaperColor
+	      '';
             };
             programs.git = {
               enable = true;
